@@ -1,0 +1,212 @@
+public class Persona {
+    //Atributos
+    private String nombre;
+    private int edad;
+    private String documentoIdentidad;
+    private char sexo; //'H' para hombres y 'M' para mujeres
+    private double peso;//kilogramos
+    private double altura;//en metros
+    
+    //Constructor
+    public Persona(String nombre, int edad, String documentoIdentidad, char sexo, double peso, double altura) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.documentoIdentidad = documentoIdentidad;
+        this.sexo = sexo;
+        this.peso = peso;
+        this.altura = altura;
+    }
+    //Constructor con valores predeterminados
+
+    
+      public Persona(String nombre, int edad, String documentoIdentidad, char sexo) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.documentoIdentidad = documentoIdentidad;
+        this.sexo = sexo;
+        this.peso = 70;
+        this.altura = 1.70;
+    }
+    
+    //Getter y Setter
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public String getDocumentoIdentidad() {
+        return documentoIdentidad;
+    }
+
+    public void setDocumentoIdentidad(String documentoIdentidad) {
+        this.documentoIdentidad = documentoIdentidad;
+    }
+
+    public char getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(char sexo) {
+        this.sexo = sexo;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+    
+    //Metodo para calcular IMC
+    public double calcularIMC(){
+        return peso / Math.pow(altura,2);
+    }
+    
+    //Método para calcular el IMC sobrecarga
+    public double calcularIMC(double peso, double altura){
+        return peso / Math.pow(altura,2);
+    }
+    
+    //Método de categorización del IMC
+    public String categorizarIMC(double IMC){
+        if (IMC < 18.5){
+            return "Delgadez leve";
+        }
+        else if (IMC >= 18.5 && IMC < 25){
+            return "Peso normal";
+        }
+        else if (IMC >=25 && IMC < 30){
+            return "Sobre peso";
+        }
+        else{
+            return "Obesidad moderada";
+        }
+    }
+    }
+__________________________________
+
+public class Persona {
+    //Atributos
+    private String nombre;
+    private int edad;
+    private String documentoIdentidad;
+    private char sexo; //'H' para hombres y 'M' para mujeres
+    private double peso;//kilogramos
+    private double altura;//en metros
+    
+    //Constructor
+    public Persona(String nombre, int edad, String documentoIdentidad, char sexo, double peso, double altura) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.documentoIdentidad = documentoIdentidad;
+        this.sexo = sexo;
+        this.peso = peso;
+        this.altura = altura;
+    }
+    //Constructor con valores predeterminados
+
+    
+      public Persona(String nombre, int edad, String documentoIdentidad, char sexo) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.documentoIdentidad = documentoIdentidad;
+        this.sexo = sexo;
+        this.peso = 70;
+        this.altura = 1.70;
+    }
+    
+    //Getter y Setter
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public String getDocumentoIdentidad() {
+        return documentoIdentidad;
+    }
+
+    public void setDocumentoIdentidad(String documentoIdentidad) {
+        this.documentoIdentidad = documentoIdentidad;
+    }
+
+    public char getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(char sexo) {
+        this.sexo = sexo;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+    
+    //Metodo para calcular IMC
+    public double calcularIMC(){
+        return peso / Math.pow(altura,2);
+    }
+    
+    //Método para calcular el IMC sobrecarga
+    public double calcularIMC(double peso, double altura){
+        return peso / Math.pow(altura,2);
+    }
+    
+    //Método de categorización del IMC
+    public String categorizarIMC(double IMC){
+        if (IMC < 18.5){
+            return "Delgadez leve";
+        }
+        else if (IMC >= 18.5 && IMC < 25){
+            return "Peso normal";
+        }
+        else if (IMC >=25 && IMC < 30){
+            return "Sobre peso";
+        }
+        else{
+            return "Obesidad moderada";
+        }
+    }
+    }
